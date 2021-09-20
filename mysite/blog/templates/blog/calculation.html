@@ -1,0 +1,36 @@
+{% extends "blog/base.html" %}
+{% load tag %}
+{% block content %}
+    
+    {% load tag %}
+    <!-- 
+
+
+         <div id="id_div">
+        {% hello_world %}
+         </div>
+    -->
+   
+
+     
+        <div class="card" style="width: 36rem;">
+        <div class="card-body">
+
+            <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">Given Speech </label>
+                <strong><input type="text" class="form-control" id="formGroupExampleInput" placeholder="{{ post.given_text }}"></strong>
+            </div>
+            <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">Automated Speech </label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="{{ post.automated_text }}">
+            </div>
+
+            
+            <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">WER Value </label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="{% hello_world %}%">
+            </div>
+
+        </div>
+    </div> 
+{% endblock content %}
